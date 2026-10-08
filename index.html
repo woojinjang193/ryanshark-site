@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>RyanShark</title>
-<meta name="description" content="RyanShark - Indie game studio">
+<title>GenePet by RyanShark</title>
+<meta name="description" content="GenePet: Cat Fairy Raising — a cozy raising game on Google Play where you combine genes to create your own cat fairy. Made by RyanShark, an indie game studio in Seoul.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
 <script>document.documentElement.className+=" js"</script>
@@ -25,39 +25,37 @@
   main{flex:1}
   .js main section{display:none}
   .js main section.on{display:block}
-  .hero{padding:56px 0 24px}
-  .hero h1{font-size:clamp(32px,8vw,52px);line-height:1.2;margin:0 0 12px;font-weight:900}
-  .hero p{color:var(--sub);font-size:17px;margin:0 0 28px}
-  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
   h2{font-size:22px;margin:32px 0 16px}
-  .games{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;gap:16px;align-items:flex-start}
-  .icon{width:72px;height:72px;border-radius:16px;flex:none;object-fit:cover;background:var(--line)}
-  .ph{display:flex;align-items:center;justify-content:center;font-size:34px}
-  .card h3{margin:0 0 4px;font-size:18px}
-  .tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--line);color:var(--sub);margin-bottom:6px}
-  .card p{margin:0 0 10px;color:var(--sub);font-size:15px}
-  .btn{display:inline-block;color:var(--accent);font-weight:700;text-decoration:none;font-size:14px}
-  .contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
-  .contact p{margin:0 0 12px;color:var(--sub)}
-  .contact a{color:var(--accent);font-weight:700;text-decoration:none;font-size:18px;word-break:break-all}
-  .game{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
-  .game-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
-  .game-head h3{margin:0 0 4px;font-size:20px}
-  .game .lead{margin:0;color:var(--sub);font-size:15px}
-  .game>p{color:var(--sub);font-size:15px;margin:16px 0}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
+  .hero{display:flex;gap:20px;align-items:center;padding:40px 0 24px}
+  .hero .appicon{width:112px;height:112px;border-radius:26px;flex:none;object-fit:cover;background:var(--line);box-shadow:0 6px 20px rgba(0,0,0,.12)}
+  .hero h1{font-size:clamp(26px,6vw,40px);line-height:1.2;margin:4px 0 8px;font-weight:900}
+  .hero p{color:var(--sub);font-size:17px;margin:0 0 16px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--line);color:var(--sub)}
   .shots{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
-  .shots img{height:200px;width:auto;max-width:none;border-radius:12px;flex:none;scroll-snap-align:start;border:1px solid var(--line);background:var(--line)}
-  .feats{margin:0 0 16px;padding-left:20px;color:var(--sub);font-size:15px}
-  .feats li{margin-bottom:6px}
-  .feats b{color:var(--text)}
-  .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:0 0 18px}
-  .meta div{background:var(--bg);border-radius:10px;padding:10px 12px}
+  .shots img{height:220px;width:auto;max-width:none;border-radius:12px;flex:none;scroll-snap-align:start;border:1px solid var(--line);background:var(--line)}
+  .desc{color:var(--sub);font-size:16px;margin:20px 0}
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 20px;padding:0;list-style:none}
+  .feats li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;color:var(--sub);font-size:15px}
+  .feats b{display:block;color:var(--text);font-size:16px;margin-bottom:4px}
+  .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:0 0 24px}
+  .meta div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
   .meta .wide{grid-column:1/-1}
   .meta dt{font-size:12px;color:var(--sub);margin:0}
   .meta dd{margin:2px 0 0;font-weight:700;font-size:14px}
-  .cta.small{padding:10px 18px;font-size:14px}
+  .center{text-align:center;margin:8px 0 8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;gap:16px;align-items:flex-start;margin-bottom:16px}
+  .icon{width:72px;height:72px;border-radius:16px;flex:none;object-fit:cover;background:var(--line)}
+  .ph{display:flex;align-items:center;justify-content:center;font-size:34px}
+  .card h3{margin:6px 0 4px;font-size:18px}
+  .card p{margin:0 0 10px;color:var(--sub);font-size:15px}
+  .btn{display:inline-block;color:var(--accent);font-weight:700;text-decoration:none;font-size:14px}
+  .about p{color:var(--sub);font-size:16px}
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .contact p{margin:0 0 12px;color:var(--sub)}
+  .contact a{color:var(--accent);font-weight:700;text-decoration:none;font-size:18px;word-break:break-all}
   footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 40px;color:var(--sub);font-size:13px}
+  @media (max-width:520px){.hero{flex-direction:column;align-items:flex-start;padding-top:28px}.hero .appicon{width:96px;height:96px;border-radius:22px}}
 </style>
 </head>
 <body>
@@ -71,69 +69,84 @@
   </header>
 
   <nav>
-    <a href="#home" data-tab="home" data-ko="홈" data-en="Home">Home</a>
-    <a href="#games" data-tab="games" data-ko="게임" data-en="Games">Games</a>
+    <a href="#home" data-tab="home" data-ko="진펫" data-en="GenePet">GenePet</a>
+    <a href="#studio" data-tab="studio" data-ko="스튜디오" data-en="Studio">Studio</a>
     <a href="#contact" data-tab="contact" data-ko="문의" data-en="Contact">Contact</a>
   </nav>
 
   <main>
+    <!-- GenePet landing -->
     <section id="home">
       <div class="hero">
-        <h1>RyanShark</h1>
-        <p data-ko="Unity로 모바일·PC 게임을 개발하는 인디 게임 스튜디오입니다." data-en="An indie game studio developing mobile and PC games with Unity.">An indie game studio developing mobile and PC games with Unity.</p>
-        <a class="cta" href="#games" data-ko="게임 보러 가기 →" data-en="See our games →">See our games →</a>
+        <img class="appicon" src="https://play-lh.googleusercontent.com/4yNqP3rHd07a3_DOjwvMdooSWnTUVLIeZz9BDokjyMK0JqNTlPNCZHVbuDhlRHwM0iqsgVuCbZsIQAq5nqRlDA=s240" alt="GenePet app icon">
+        <div>
+          <span class="tag" data-ko="Google Play 출시 · Android" data-en="Live on Google Play · Android">Live on Google Play · Android</span>
+          <h1 data-ko="진펫: 고양이 요정 키우기" data-en="GenePet: Cat Fairy Raising">GenePet: Cat Fairy Raising</h1>
+          <p data-ko="유전자를 조합해 나만의 고양이 요정을 만들고 키우는 힐링 육성 게임" data-en="A cozy raising game where you combine genes to create your own cat fairy.">A cozy raising game where you combine genes to create your own cat fairy.</p>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.ryanshark.genepet" target="_blank" rel="noopener" data-ko="Google Play에서 무료 다운로드 →" data-en="Download free on Google Play →">Download free on Google Play →</a>
+        </div>
+      </div>
+
+      <div class="shots">
+        <img src="https://play-lh.googleusercontent.com/K2HGlHGkuj8v-hQ0P8reW05QejGaakrRdB68nAZr6shOGWnO-Fhdl5EJiUkHKtfAGC-TIYKethqIdXR5ndZSevg=h720" alt="GenePet screenshot 1" loading="lazy">
+        <img src="https://play-lh.googleusercontent.com/1yrsga8rN_pyxVtKlAft1WLsI7OAERAVQAPbMNLvf4DPjmmgxWpU_FwQ_yY7Lvi-XAk9ggR7d6Dq4dqqHVq7gA=h720" alt="GenePet screenshot 2" loading="lazy">
+        <img src="https://play-lh.googleusercontent.com/cH3qiBZvjEpbzy9U40BsjAOYX3UYgyKuWqqhOhG-1GiOvSChhdEnQYvOKQpOgThCWujjmNj_wmv3hx4-OGO-Bw=h720" alt="GenePet screenshot 3" loading="lazy">
+        <img src="https://play-lh.googleusercontent.com/kLfch3Z2b1OPCCv5NmMcxnTHqQyQnfqegn-s64SexjzqWl5YedbRK8aKEGF3uGa7iPpEA0QyiEJ9eXuu0IMhCcU=h720" alt="GenePet screenshot 4" loading="lazy">
+      </div>
+
+      <p class="desc" data-ko="GenePet은 유전자를 조합해 내가 원하는 고양이 요정을 만들고, 성장시키며 돌보는 힐링 육성 게임입니다. 다양한 파츠를 조합해 외형과 개성을 설계하고, 키우는 과정에서 변화하는 모습을 지켜보세요." data-en="GenePet is a cozy raising game where you design the cat fairy you want by combining genes, then raise and care for it. Mix and match parts to shape its look and personality, and watch it change as it grows.">GenePet is a cozy raising game where you design the cat fairy you want by combining genes, then raise and care for it. Mix and match parts to shape its look and personality, and watch it change as it grows.</p>
+
+      <ul class="feats">
+        <li data-ko="<b>유전자 조합</b>다양한 파츠로 외형과 개성을 직접 설계" data-en="<b>Gene combining</b>Design looks and personality from a wide range of parts"><b>Gene combining</b>Design looks and personality from a wide range of parts</li>
+        <li data-ko="<b>1000억+ 가지 조합</b>세상에 하나뿐인 나만의 고양이 요정" data-en="<b>100B+ combinations</b>A cat fairy that's truly one of a kind"><b>100B+ combinations</b>A cat fairy that's truly one of a kind</li>
+        <li data-ko="<b>성장과 돌봄</b>키우는 동안 변화하는 모습을 지켜보는 재미" data-en="<b>Grow &amp; care</b>Watch your fairy change as it grows"><b>Grow &amp; care</b>Watch your fairy change as it grows</li>
+      </ul>
+
+      <dl class="meta">
+        <div><dt data-ko="장르" data-en="Genre">Genre</dt><dd data-ko="시뮬레이션 · 육성" data-en="Simulation · Raising">Simulation · Raising</dd></div>
+        <div><dt data-ko="플랫폼" data-en="Platform">Platform</dt><dd>Android</dd></div>
+        <div><dt data-ko="이용 등급" data-en="Rating">Rating</dt><dd data-ko="만 3세 이상" data-en="Ages 3+">Ages 3+</dd></div>
+        <div><dt data-ko="가격" data-en="Price">Price</dt><dd data-ko="무료 (광고 포함)" data-en="Free (contains ads)">Free (contains ads)</dd></div>
+        <div class="wide"><dt data-ko="지원 언어" data-en="Languages">Languages</dt><dd data-ko="한국어 · 영어 · 일본어 · 중국어(번체·간체) · 스페인어 · 독일어" data-en="Korean · English · Japanese · Chinese (Traditional &amp; Simplified) · Spanish · German">Korean · English · Japanese · Chinese (Traditional &amp; Simplified) · Spanish · German</dd></div>
+      </dl>
+
+      <div class="center">
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.ryanshark.genepet" target="_blank" rel="noopener" data-ko="Google Play에서 다운로드 →" data-en="Get it on Google Play →">Get it on Google Play →</a>
       </div>
     </section>
 
-    <section id="games">
+    <!-- Studio -->
+    <section id="studio">
+      <h2 data-ko="RyanShark 스튜디오" data-en="About RyanShark">About RyanShark</h2>
+      <div class="about">
+        <p data-ko="RyanShark는 서울의 인디 게임 스튜디오로, Unity로 모바일·PC 게임을 개발합니다." data-en="RyanShark is an indie game studio in Seoul, developing mobile and PC games with Unity.">RyanShark is an indie game studio in Seoul, developing mobile and PC games with Unity.</p>
+      </div>
       <h2 data-ko="게임" data-en="Games">Games</h2>
-      <div class="games">
-        <article class="game">
-          <div class="game-head">
-            <img class="icon" src="https://play-lh.googleusercontent.com/4yNqP3rHd07a3_DOjwvMdooSWnTUVLIeZz9BDokjyMK0JqNTlPNCZHVbuDhlRHwM0iqsgVuCbZsIQAq5nqRlDA=s240" alt="GenePet">
-            <div>
-              <span class="tag" data-ko="출시 · Android" data-en="Released · Android">Released · Android</span>
-              <h3 data-ko="진펫: 고양이 요정 키우기" data-en="GenePet: Cat Fairy Raising">GenePet: Cat Fairy Raising</h3>
-              <p class="lead" data-ko="유전자를 조합해 나만의 고양이 요정을 만들고 키우는 힐링 육성 게임" data-en="A cozy raising game where you combine genes to create your own cat fairy">A cozy raising game where you combine genes to create your own cat fairy</p>
-            </div>
-          </div>
-          <div class="shots">
-              <img src="https://play-lh.googleusercontent.com/K2HGlHGkuj8v-hQ0P8reW05QejGaakrRdB68nAZr6shOGWnO-Fhdl5EJiUkHKtfAGC-TIYKethqIdXR5ndZSevg=h720" alt="GenePet screenshot 1" loading="lazy">
-              <img src="https://play-lh.googleusercontent.com/1yrsga8rN_pyxVtKlAft1WLsI7OAERAVQAPbMNLvf4DPjmmgxWpU_FwQ_yY7Lvi-XAk9ggR7d6Dq4dqqHVq7gA=h720" alt="GenePet screenshot 2" loading="lazy">
-              <img src="https://play-lh.googleusercontent.com/cH3qiBZvjEpbzy9U40BsjAOYX3UYgyKuWqqhOhG-1GiOvSChhdEnQYvOKQpOgThCWujjmNj_wmv3hx4-OGO-Bw=h720" alt="GenePet screenshot 3" loading="lazy">
-              <img src="https://play-lh.googleusercontent.com/kLfch3Z2b1OPCCv5NmMcxnTHqQyQnfqegn-s64SexjzqWl5YedbRK8aKEGF3uGa7iPpEA0QyiEJ9eXuu0IMhCcU=h720" alt="GenePet screenshot 4" loading="lazy">
-          </div>
-          <p data-ko="GenePet은 유전자를 조합해 내가 원하는 고양이 요정을 만들고, 성장시키며 돌보는 힐링 육성 게임입니다. 다양한 파츠를 조합해 외형과 개성을 설계하고, 키우는 과정에서 변화하는 모습을 지켜보세요." data-en="GenePet is a cozy raising game where you design the cat fairy you want by combining genes, then raise and care for it. Mix and match parts to shape its look and personality, and watch it change as it grows.">GenePet is a cozy raising game where you design the cat fairy you want by combining genes, then raise and care for it. Mix and match parts to shape its look and personality, and watch it change as it grows.</p>
-          <ul class="feats">
-            <li data-ko="<b>유전자 조합</b> — 다양한 파츠로 외형과 개성을 직접 설계" data-en="<b>Gene combining</b> — design looks and personality from a wide range of parts"><b>Gene combining</b> — design looks and personality from a wide range of parts</li>
-            <li data-ko="<b>1000억+ 가지 조합</b> — 세상에 하나뿐인 나만의 고양이 요정" data-en="<b>100B+ combinations</b> — a cat fairy that's one of a kind"><b>100B+ combinations</b> — a cat fairy that's one of a kind</li>
-            <li data-ko="<b>성장과 돌봄</b> — 키우는 동안 변화하는 모습을 지켜보는 재미" data-en="<b>Grow &amp; care</b> — watch your fairy change as it grows"><b>Grow &amp; care</b> — watch your fairy change as it grows</li>
-          </ul>
-          <dl class="meta">
-            <div><dt data-ko="장르" data-en="Genre">Genre</dt><dd data-ko="시뮬레이션 · 육성" data-en="Simulation · Raising">Simulation · Raising</dd></div>
-            <div><dt data-ko="플랫폼" data-en="Platform">Platform</dt><dd>Android</dd></div>
-            <div><dt data-ko="이용 등급" data-en="Rating">Rating</dt><dd data-ko="만 3세 이상" data-en="Ages 3+">Ages 3+</dd></div>
-            <div><dt data-ko="엔진" data-en="Engine">Engine</dt><dd>Unity</dd></div>
-            <div class="wide"><dt data-ko="지원 언어" data-en="Languages">Languages</dt><dd data-ko="한국어 · 영어 · 일본어 · 중국어(번체·간체) · 스페인어 · 독일어" data-en="Korean · English · Japanese · Chinese (Traditional &amp; Simplified) · Spanish · German">Korean · English · Japanese · Chinese (Traditional &amp; Simplified) · Spanish · German</dd></div>
-          </dl>
-          <a class="cta small" href="https://play.google.com/store/apps/details?id=com.ryanshark.genepet" target="_blank" rel="noopener" data-ko="Google Play에서 다운로드 →" data-en="Get it on Google Play →">Get it on Google Play →</a>
-        </article>
-        <div class="card">
-          <div class="icon ph">🍳</div>
-          <div>
-            <span class="tag" data-ko="개발 중 · Steam" data-en="In development · Steam">In development · Steam</span>
-            <h3>A Cooking Game</h3>
-            <p data-ko="현재 개발 중인 요리 게임으로, Steam 출시를 준비하고 있습니다." data-en="A cooking game currently in development, coming to Steam.">A cooking game currently in development, coming to Steam.</p>
-            <span class="btn" data-ko="Steam 출시 예정" data-en="Coming soon to Steam">Coming soon to Steam</span>
-          </div>
+      <div class="card">
+        <img class="icon" src="https://play-lh.googleusercontent.com/4yNqP3rHd07a3_DOjwvMdooSWnTUVLIeZz9BDokjyMK0JqNTlPNCZHVbuDhlRHwM0iqsgVuCbZsIQAq5nqRlDA=s240" alt="GenePet">
+        <div>
+          <span class="tag" data-ko="출시 · Android" data-en="Released · Android">Released · Android</span>
+          <h3 data-ko="진펫: 고양이 요정 키우기" data-en="GenePet: Cat Fairy Raising">GenePet: Cat Fairy Raising</h3>
+          <p data-ko="유전자를 조합해 나만의 고양이 요정을 만들고 키우는 힐링 육성 게임." data-en="A cozy raising game where you combine genes to create your own cat fairy.">A cozy raising game where you combine genes to create your own cat fairy.</p>
+          <a class="btn" href="#home" data-ko="자세히 보기 →" data-en="Learn more →">Learn more →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon ph">🍳</div>
+        <div>
+          <span class="tag" data-ko="개발 중 · Steam" data-en="In development · Steam">In development · Steam</span>
+          <h3>A Cooking Game</h3>
+          <p data-ko="현재 폴리싱 단계의 PC 요리 게임으로, Steam 출시를 준비하고 있습니다." data-en="A PC cooking game in the polishing stage, coming to Steam.">A PC cooking game in the polishing stage, coming to Steam.</p>
+          <span class="btn" data-ko="Steam 출시 예정" data-en="Coming soon to Steam">Coming soon to Steam</span>
         </div>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <h2 data-ko="문의" data-en="Contact">Contact</h2>
       <div class="contact">
-        <p data-ko="게임 관련 문의, 제휴, 피드백은 아래 이메일로 보내주세요." data-en="For game inquiries, partnerships, or feedback, please email us.">For game inquiries, partnerships, or feedback, please email us.</p>
+        <p data-ko="게임 관련 문의, 제휴, 피드백은 아래 이메일로 보내주세요." data-en="For game support, partnerships, or feedback, please email us.">For game support, partnerships, or feedback, please email us.</p>
         <a href="mailto:support@ryanshark.co.kr">support@ryanshark.co.kr</a>
       </div>
     </section>
@@ -152,7 +165,7 @@
     document.getElementById('b-en').className=l==='en'?'on':'';
     try{localStorage.setItem('lang',l)}catch(e){}
   }
-  var TABS=['home','games','contact'];
+  var TABS=['home','studio','contact'];
   function showTab(t){
     if(TABS.indexOf(t)<0)t='home';
     document.querySelectorAll('main section').forEach(function(s){s.className=s.id===t?'on':''});
