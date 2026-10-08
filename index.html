@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RyanShark</title>
+<meta name="description" content="RyanShark - Indie game studio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f6f8fb;--card:#fff;--text:#14213d;--sub:#5b6b85;--accent:#1f7ae0;--line:#e3e8f0}
+  @media (prefers-color-scheme:dark){:root{--bg:#0e1420;--card:#172033;--text:#eef3fb;--sub:#9aa9c2;--accent:#5aa4ff;--line:#26314a}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:0 16px;min-height:100vh;display:flex;flex-direction:column}
+  header{display:flex;justify-content:space-between;align-items:center;padding:20px 0 12px}
+  .logo{font-weight:900;font-size:22px;letter-spacing:-.5px;text-decoration:none;color:var(--text)}
+  .logo span{color:var(--accent)}
+  .lang button{border:1px solid var(--line);background:var(--card);color:var(--sub);padding:6px 12px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer}
+  .lang button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  nav{display:flex;gap:4px;border-bottom:1px solid var(--line);margin-bottom:8px}
+  nav a{padding:10px 14px;color:var(--sub);text-decoration:none;font-weight:700;font-size:15px;border-bottom:3px solid transparent;margin-bottom:-1px}
+  nav a.on{color:var(--text);border-color:var(--accent)}
+  main{flex:1}
+  section{display:none}
+  section.on{display:block}
+  .hero{padding:56px 0 24px}
+  .hero h1{font-size:clamp(32px,8vw,52px);line-height:1.2;margin:0 0 12px;font-weight:900}
+  .hero p{color:var(--sub);font-size:17px;margin:0 0 28px}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:12px}
+  h2{font-size:22px;margin:32px 0 16px}
+  .games{display:grid;gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;gap:16px;align-items:flex-start}
+  .icon{width:72px;height:72px;border-radius:16px;flex:none;object-fit:cover;background:var(--line)}
+  .ph{display:flex;align-items:center;justify-content:center;font-size:34px}
+  .card h3{margin:0 0 4px;font-size:18px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--line);color:var(--sub);margin-bottom:6px}
+  .card p{margin:0 0 10px;color:var(--sub);font-size:15px}
+  .btn{display:inline-block;color:var(--accent);font-weight:700;text-decoration:none;font-size:14px}
+  .contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .contact p{margin:0 0 12px;color:var(--sub)}
+  .contact a{color:var(--accent);font-weight:700;text-decoration:none;font-size:18px;word-break:break-all}
+  footer{border-top:1px solid var(--line);margin-top:56px;padding:24px 0 40px;color:var(--sub);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#home">Ryan<span>Shark</span></a>
+    <div class="lang">
+      <button id="b-ko" onclick="setLang('ko')">한국어</button>
+      <button id="b-en" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home" data-tab="home" data-ko="홈" data-en="Home"></a>
+    <a href="#games" data-tab="games" data-ko="게임" data-en="Games"></a>
+    <a href="#contact" data-tab="contact" data-ko="문의" data-en="Contact"></a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div class="hero">
+        <h1>RyanShark</h1>
+        <p data-ko="Unity로 모바일·PC 게임을 개발하는 인디 게임 스튜디오입니다." data-en="An indie game studio developing mobile and PC games with Unity."></p>
+        <a class="cta" href="#games" data-ko="게임 보러 가기 →" data-en="See our games →"></a>
+      </div>
+    </section>
+
+    <section id="games">
+      <h2 data-ko="게임" data-en="Games"></h2>
+      <div class="games">
+        <div class="card">
+          <img class="icon" src="https://play-lh.googleusercontent.com/4yNqP3rHd07a3_DOjwvMdooSWnTUVLIeZz9BDokjyMK0JqNTlPNCZHVbuDhlRHwM0iqsgVuCbZsIQAq5nqRlDA=s240" alt="GenePet">
+          <div>
+            <span class="tag" data-ko="출시 · Android" data-en="Released · Android"></span>
+            <h3 data-ko="진펫: 고양이 요정 키우기" data-en="GenePet"></h3>
+            <p data-ko="유전자를 조합해 나만의 고양이 요정을 만들고 키우는 힐링 육성 게임. 1000억 가지 이상의 조합으로 세상에 하나뿐인 요정을 만들어 보세요." data-en="A cozy raising game where you combine genes to create and care for your own cat fairy — with over 100 billion possible combinations."></p>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.ryanshark.genepet" target="_blank" rel="noopener" data-ko="Google Play에서 보기 →" data-en="Get it on Google Play →"></a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon ph">🍳</div>
+          <div>
+            <span class="tag" data-ko="개발 중 · Steam" data-en="In development · Steam"></span>
+            <h3>A Cooking Game</h3>
+            <p data-ko="현재 개발 중인 요리 게임으로, Steam 출시를 준비하고 있습니다." data-en="A cooking game currently in development, coming to Steam."></p>
+            <span class="btn" data-ko="Steam 출시 예정" data-en="Coming soon to Steam"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 data-ko="문의" data-en="Contact"></h2>
+      <div class="contact">
+        <p data-ko="게임 관련 문의, 제휴, 피드백은 아래 이메일로 보내주세요." data-en="For game inquiries, partnerships, or feedback, please email us."></p>
+        <a href="mailto:support@ryanshark.co.kr">support@ryanshark.co.kr</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div data-ko="상호: RyanShark · 대표: 장우진 · 사업자등록번호: 867-14-02709" data-en="RyanShark · CEO: Woojin Jang · Business Reg. No. 867-14-02709"></div>
+    <div>© 2026 RyanShark. All rights reserved.</div>
+  </footer>
+</div>
+<script>
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-ko]').forEach(function(e){e.innerHTML=e.getAttribute('data-'+l)});
+    document.getElementById('b-ko').className=l==='ko'?'on':'';
+    document.getElementById('b-en').className=l==='en'?'on':'';
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  var TABS=['home','games','contact'];
+  function showTab(t){
+    if(TABS.indexOf(t)<0)t='home';
+    document.querySelectorAll('main section').forEach(function(s){s.className=s.id===t?'on':''});
+    document.querySelectorAll('nav a').forEach(function(a){a.className=a.getAttribute('data-tab')===t?'on':''});
+    window.scrollTo(0,0);
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]');
+    if(!a)return;
+    var t=a.getAttribute('href').slice(1);
+    if(TABS.indexOf(t)<0)return;
+    e.preventDefault();
+    showTab(t);
+    try{history.replaceState(null,'','#'+t)}catch(err){}
+  });
+  window.addEventListener('hashchange',function(){showTab(location.hash.slice(1))});
+  var saved=null;try{saved=localStorage.getItem('lang')}catch(e){}
+  setLang(saved||((navigator.language||'').indexOf('ko')===0?'ko':'en'));
+  showTab((location.hash||'#home').slice(1));
+</script>
+</body>
+</html>
